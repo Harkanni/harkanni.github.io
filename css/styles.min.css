@@ -252,6 +252,9 @@ li {
 	border-width: 5px;
 	margin-top: -5px;
 }
+.imageWrapper {
+    height: 100%;
+}
 .imageWrapper, .progress-bar {
     position: relative;
 }
@@ -302,7 +305,10 @@ li {
 }
 .portfolioWrapper img {
     width: 100%;
-	transition: all 300ms ease-in-out 0s;
+    height: 100% !important;
+    object-fit: unset;
+	transition: all 300ms ease-in-out 0s;    
+    display: block !important;
 }
 .portfolioWrapper .imageHover:hover {
       transform: scale(1.1);
